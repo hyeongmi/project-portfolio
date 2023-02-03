@@ -1,0 +1,117 @@
+/* 폰트 반응형 */
+
+.w1400{
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.txt96{
+    font-size: 96px;
+}
+.txt64{
+  font-size: 64px;
+}
+.txt40{
+  font-size: 40px;
+}
+.txt24{
+  font-size: 24px;
+}
+.txt20{
+    font-size: 20px;
+}
+.txt22{
+    font-size: 22px;
+}
+.txt28{
+    font-size: 28px;
+}
+.txt18{
+  font-size: 18px;
+}
+.txt14{font-size: 14px;}
+
+@media screen and (max-width:1024px) {
+  .txt96{
+      font-size: 80px;
+  }
+  .txt64{
+    font-size: 54px;
+  }
+  .txt40{
+    font-size: 38px;
+  }
+  .txt24{
+    font-size: 20px;
+  }
+  .txt20{
+      font-size: 18px;
+  }
+  .txt22{
+      font-size: 20px;
+  }
+  .txt28{
+      font-size: 26px;
+  }
+  .txt18{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:768px) {
+  .txt96{
+      font-size:75px;
+  }
+  .txt64{
+    font-size: 50px;
+  }
+  .txt40{
+    font-size: 34px;
+  }
+  .txt28{
+      font-size:24px;
+  }
+  .txt24{
+    font-size: 18px;
+  }
+  .txt22{
+      font-size: 20px;
+  }
+  .txt20{
+      font-size:16px;
+  }
+
+  .txt18{
+    font-size: 14px;
+  }
+  .txt14{font-size: 12px;}
+}
+@media screen and (max-width:480px) {
+  .txt96{
+      font-size:68px;
+  }
+  .txt64{
+    font-size: 48px;
+  }
+  .txt40{
+    font-size: 30px;
+  }
+  .txt28{
+      font-size:22px;
+  }
+  .txt24{
+    font-size: 18px;
+  }
+  .txt22{
+      font-size: 20px;
+  }
+  .txt20{
+      font-size:16px;
+  }
+  .txt18{
+    font-size: 14px;
+  }
+  .txt14{font-size: 10px;}
+}
+
+
