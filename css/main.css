@@ -46,6 +46,7 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
 .title span{position: absolute; right: -25px;}
 .title span >img{width: 100%;}
 .title .txt64{font-weight: 600;color: #002287;}
+.intro .inner .mi_intro .title{max-width: 320px;}
 .intro .inner .mi_intro .profile_img{padding: 35px 0 30px;}
 .intro .inner .mi_intro .profile_img img{width: 100%;}
 .intro .inner .mi_intro .myself .name {padding-bottom: 30px;}
@@ -143,7 +144,9 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
   .start .inner .textZone p .txt96{font-size: 28px;}
 }
 
-
+/* contents */
+.contents_1 .inner , .contents_2 .inner{ padding:70px 10px}
+.contents_1 .inner .title, .contents_2 .inner .title{ padding:70px 10px;max-width: 340px;}
 
 
 
@@ -166,7 +169,8 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
 .last .inner .contect .contect_in span.right_q{display: block; text-align: right;margin-top: -30px;}
 .last .inner .contect .contect_in span.left_q{display: block;margin-bottom: -30px;}
 
-.last .inner .Thanks .title {max-width: 200px;}
+.last .inner .Thanks .title {max-width: 210px;}
+.last .inner .Thanks .title span{top: -20px;}
 .last .inner .Thanks .title .txt64{line-height: 0.6; font-weight: 600;}
 .last .inner .Thanks .content .txt20{padding-top: 50px;}
 .last .inner .Thanks .content .txt24{padding-top: 50px;font-weight: 600;color: #002287;}
@@ -176,7 +180,7 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
 }
 @media screen and (max-width:768px) {
   .last .inner{padding: 70px 10px;}
-  .last .inner .Thanks .title span{top: -20px;right: -25px;}
+  .last .inner .Thanks .title span{top: -30px;right: -25px;}
   .last .inner .contect{padding-bottom: 70px;}
   .last .inner .contect .contect_in span img{max-width: 20px;}
   .brNone768{display: none;}

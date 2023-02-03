@@ -19,6 +19,7 @@
 
 
   <link rel="shortcut icon" href="./images/hmicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/reset.css" >  
   <link rel="stylesheet" href="css/main.css" >  
   <link rel="stylesheet" href="css/commend.css" >
@@ -26,6 +27,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -180,10 +182,79 @@
       </div>
     </div>
     <div class="contents_1">
-      <div class="inner w1400"></div>
+      <div class="inner w1400">
+        <div class="title">
+          <span><img src="./images/background/ellipse.png" alt="타이틀 꾸밈 원"></span>
+          <strong class="txt64">CONTENTS</strong>
+        </div>
+        <div class="slideArea">
+          <div class="slideZone">
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  slide1
+                </div>
+                <div class="swiper-slide">
+                  slide2
+                </div>
+                <div class="swiper-slide">
+                  slide3
+                </div>
+                <div class="swiper-slide">
+                  slide4
+                </div>
+                <div class="swiper-slide">
+                  slide5
+                </div>
+                <div class="swiper-slide">
+                  slide6
+                </div>
+                <div class="swiper-slide">
+                  slide7
+                </div>
+              </div>
+            </div>
+            <div style="--swiper-navigation-color: #333333; --swiper-pagination-color: #333333" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  slide1
+                </div>
+                <div class="swiper-slide">
+                  slide2
+                </div>
+                <div class="swiper-slide">
+                  slide3
+                </div>
+                <div class="swiper-slide">
+                  slide4
+                </div>
+                <div class="swiper-slide">
+                  slide5
+                </div>
+                <div class="swiper-slide">
+                  slide6
+                </div>
+                <div class="swiper-slide">
+                  slide7
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="contents_2">
-      <div class="inner w1400"></div>
+      <div class="inner w1400">
+        <div class="inner w1400">
+          <div class="title">
+            <span><img src="./images/background/ellipse.png" alt="타이틀 꾸밈 원"></span>
+            <strong class="txt64">CONTENTS</strong>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="last">
       <div class="inner w1400">
@@ -227,4 +298,23 @@
 
 <script> 
   AOS.init(); 
+
+  var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
 </script>
