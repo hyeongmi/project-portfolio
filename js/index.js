@@ -19,6 +19,14 @@ $(function(){
   // });
 
 
+  $(function(){
+    $('.progress-bar__bar').each(function(){
+        let num = $(this).attr('data-num');
+        num = Number( num )
+    $(this).css('transform','translateX('+num+'%)');   	
+  });
+
+})
 
   $('.domino_m').on('click',function(){
     window.open('http://miming.co.kr/project/domino_mobile/index.html','win1','width=360, left=900, top=20, height=950');

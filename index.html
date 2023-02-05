@@ -25,19 +25,19 @@
   <link rel="stylesheet" href="css/commend.css" >
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
 
-  <script src="js/jquery.js"></script>
-  <script src="js/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="js/jquery.js"></script>    
   <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/jquery.mousewheel.min.js"></script> 
-  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/index.js"></script>
+
 
 </head>
 <body>
   <article>
     <h1 class="hide">김형미 포트폴리오</h1>
-    <section class="con-box start">
+    <div class="start">
         <div class="inner">
           <p class="aut">Full-HD(1920*1080)에 최적화 되었있으나, 모바일기기에서도 확인이 가능합니다 :)</p>
               <div class="titleArea">
@@ -57,8 +57,8 @@
                 </div>
               </div>
         </div>
-    </section>
-    <section class="con-box intro" data-aos="fade-up"> 
+    </div>
+    <div class="intro" data-aos="fade-up"> 
       <div class="inner w1400">
         <div class="mi_intro">
           <div class="title">
@@ -91,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="mi_intro2">
+        <div class="mi_intro2" data-aos="fade-up">
           <div class="text intro2_in">
             <p class="txt24 title">I am</p>
             <p class="txt24 skill_bottom gms">#일잘알 #말잘할 #친화력 #경험왕 #노력왕 #ESFP #ISFP #맛잘알(?) #댕잘알 #알잘딱깔센!</p>
@@ -182,12 +182,12 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="con-box contents_1" data-aos="fade-up">
+    </div>
+    <div class="con-box contents_1" data-aos="fade-up">
       <div class="inner w1400">
         <div class="title">
           <span><img src="./images/background/ellipse.png" alt="타이틀 꾸밈 원"></span>
-          <strong class="txt64">CONTENTS</strong>
+          <strong class="txt64" data-aos="fade-up">CONTENTS</strong>
         </div>
         <div class="slideArea">
           <div class="slideZone">
@@ -385,8 +385,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="con-box contents_2">
+    </div>
+    <div class="con-box contents_2" data-aos="fade-up">
       <div class="inner w1400">
         <div class="title">
           <span><img src="./images/background/ellipse.png" alt="타이틀 꾸밈 원"></span>
@@ -485,8 +485,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="con-box contents_3">
+    </div>
+    <div class="con-box contents_3">
       <div class="inner w1400">
         <div class="contect" data-aos="fade-up">
           <div class="contect_in">
@@ -520,7 +520,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </article>
 
 </body>
@@ -573,6 +573,9 @@
       breakpoints:{
         1200:{
           slidesPerView: 4,
+          grid: {
+          rows: 2,
+        },
         },
         768:{
           slidesPerView: 3,
@@ -582,6 +585,9 @@
         },
         480:{
           slidesPerView: 2,
+          grid: {
+            rows: 1,
+          },
         },
         240:{
           slidesPerView: 1,
