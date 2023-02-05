@@ -29,13 +29,13 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
 .start .quoteZone{display: flex;max-width: 1350px;justify-content: space-between;margin: 0 auto;position: absolute;left: 50%;transform:translateX(-50%);width: 100%;text-align: center;}
 
 .start .inner .scroll_ico{text-align: center;position: absolute;bottom: 10%;left: 50%;transform:translateX(-50%);}
-.start .inner .scroll_ico .ico_in{animation: scroll-ani 0.9s infinite alternate;}
+.start .inner .scroll_ico .ico_in{animation: scroll-ani 0.7s infinite alternate;}
 @keyframes scroll-ani {
   from {
     transform: translate(0, 0);
   }
   to {
-      transform: translate( 0, 10%);
+      transform: translate( 0, 15%);
   }
 }
 
@@ -138,6 +138,7 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
   .start .inner .scroll_ico .ico_in >img{max-width: 30px;}
 }
 @media screen and (max-width:480px) {
+  .intro .inner{padding: 70px 10px 0;}
   .title{margin: 0 auto; max-width:220px !important;}
   .title .txt64{font-size: 35px;}
   .start .inner .textZone p.txt64 {font-size: 24px;}
@@ -145,10 +146,10 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
 }
 
 /* contents */
-
+/* content1 */
 .contents_1 .inner , .contents_2 .inner{ padding:70px 10px}
 .contents_1 .inner .title, .contents_2 .inner .title{ padding:70px 10px;max-width: 340px;}
-.contents_1 .slideArea {border: bottom 1px solid #333 ;}
+.contents_1 .slideArea {border-bottom: 1px solid #333 ;}
 .contents_1 .slideArea .slideZone {width: 100%;}
 .contents_1 .slideArea .slideZone .slideLine{width: 100%; border-bottom: 1px solid #333;display: inline-block; text-align: right;padding:0 10px 10px 0;}
 .contents_1 .slideArea .slideZone .slideUl{max-width: 900px;white-space: nowrap;}
@@ -162,63 +163,90 @@ position: absolute;top:0; animation: fadeInText 8s ease-out forwards;}
 .contents_1 .slideArea .slideZone .slideList .slideInner .imgArea:hover img{transform: scale(1.2);}
 .contents_1 .slideArea .slideZone .slideList .slideInner .txtArea{width: 360px;}
 .contents_1 .slideArea .slideZone .slideList .slideInner .txtArea p.txt20{padding-bottom: 50px;}
-.contents_1 .slideArea .slideZone .slideList .slideInner .txtArea a{display: inline-block;}
-.swiper-button-next, .swiper-button-prev{width: unset;}
-.swiper-button-next img, .swiper-button-prev img{width: 100%;}
-.swiper-button-next::after,.swiper-button-prev::after{content: "";}
-.swiper-button-next, .swiper-button-prev{top: unset;bottom: 10%;}
-.swiper-slide-thumb-active{color: #002287;font-weight: 600;}
+.contents_1 .slideArea .slideZone .slideList .slideInner .txtArea a{display: inline-block; white-space: nowrap;}
+.contents_1 .swiper-button-next, .swiper-button-prev{width: unset;}
+.contents_1 .swiper-button-next img, .swiper-button-prev img{width: 100%;}
+.contents_1 .swiper-button-next::after,.swiper-button-prev::after{content: "";}
+.contents_1 .swiper-button-next, .swiper-button-prev{top: unset;bottom: 10%;}
+.contents_1 .swiper-slide-thumb-active{color: #002287;font-weight: 600;}
 
 @media screen and (max-width:1400px) {
+  .contents_1 .inner , .contents_2 .inner{ padding:0 10px 70px;}
   .contents_1 .slideArea .slideZone .slideList .slideInner{flex-direction: column;}
   .contents_1 .slideArea .slideZone .slideList .slideInner .txtArea{text-align: center;}
+  .contents_1 .swiper-button-next, .swiper-button-prev{bottom: 5%;}
 }
 @media screen and (max-width:480px) {
-  .swiper-button-next img, .swiper-button-prev img{width: 60%;}
+  .contents_1.swiper-button-next img, .swiper-button-prev img{width: 60%;}
 }
 @media screen and (max-width:360px) {
   .contents_1 .slideArea .slideZone .slideUl{white-space: normal;}
 }
+/* content2 */
+.contents_2 .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contents_2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
 
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents_2 .swiper-grid-column>.swiper-wrapper{flex-direction: unset;align-items: center;}
+.contents_2 .listArea .slideLine{width: 100%; border-bottom: 1px solid #333;display: inline-block; text-align: right;padding:0 10px 10px 0;}
+.contents_2 .swiper-slide .listInner .textZone p{text-align:right;padding: 30px 0 10px;}
+.contents_2 .swiper-slide .listInner .imgZone{max-width: 300px;overflow: hidden;}
+.contents_2 .swiper-slide .listInner .imgZone img{width: 100%;transition: 0.5s;}
+.contents_2 .swiper-slide .listInner .imgZone:hover img{transform: scale(1.2);}
 /* last(thankyou */
-.last{
+.contents_3{
   background: url(../images/background/mainpng.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
 }
-.last .inner{padding: 150px 10px;}
-.last .inner .contect{display: flex; justify-content: flex-end;}
-.last .inner .contect .contect_in{text-align:left;width: 528px;}
-.last .inner .contect .contect_title{text-align: left;}
-.last .inner .contect .contect_title .txt24{font-weight: 800; color: #002287;}
-.last .inner .contect .contect_in .contect_textAr{max-width: 315px;margin: 0 auto;}
-.last .inner .contect .contect_in .contect_textAr .name{font-weight: 600;}
-.last .inner .contect .contect_in span img{max-width: 45px;}
-.last .inner .contect .contect_in span.right_q{display: block; text-align: right;margin-top: -30px;}
-.last .inner .contect .contect_in span.left_q{display: block;margin-bottom: -30px;}
+.contents_3 .inner{padding: 150px 10px;}
+.contents_3 .inner .contect{display: flex; justify-content: flex-end;}
+.contents_3 .inner .contect .contect_in{text-align:left;width: 528px;}
+.contents_3 .inner .contect .contect_title{text-align: left;}
+.contents_3 .inner .contect .contect_title .txt24{font-weight: 800; color: #002287;}
+.contents_3 .inner .contect .contect_text a.txt20{display: inline-block;}
+.contents_3 .inner .contect .contect_in .contect_textAr{max-width: 315px;margin: 0 auto;}
+.contents_3 .inner .contect .contect_in .contect_textAr .name{font-weight: 600;}
+.contents_3 .inner .contect .contect_in span img{max-width: 45px;}
+.contents_3 .inner .contect .contect_in span.right_q{display: block; text-align: right;margin-top: -30px;}
+.contents_3 .inner .contect .contect_in span.left_q{display: block;margin-bottom: -30px;}
 
-.last .inner .Thanks .title {max-width: 210px;}
-.last .inner .Thanks .title span{top: -20px;}
-.last .inner .Thanks .title .txt64{line-height: 0.6; font-weight: 600;}
-.last .inner .Thanks .content .txt20{padding-top: 50px;}
-.last .inner .Thanks .content .txt24{padding-top: 50px;font-weight: 600;color: #002287;}
+.contents_3 .inner .Thanks .title {max-width: 210px;}
+.contents_3 .inner .Thanks .title span{top: -20px;}
+.contents_3 .inner .Thanks .title .txt64{line-height: 0.6; font-weight: 600;}
+.contents_3 .inner .Thanks .content .txt20{padding-top: 50px;}
+.contents_3 .inner .Thanks .content .txt24{padding-top: 50px;font-weight: 600;color: #002287;}
+
 
 @media screen and (max-width:1400px) {
-  .last .inner .Thanks .title{margin: unset; max-width: 245px;}
+  .contents_3 .inner .Thanks .title{margin: unset; max-width: 245px;}
 }
 @media screen and (max-width:768px) {
-  .last .inner{padding: 70px 10px;}
-  .last .inner .Thanks .title span{top: -30px;right: -25px;}
-  .last .inner .contect{padding-bottom: 70px;}
-  .last .inner .contect .contect_in span img{max-width: 20px;}
+  .contents_3 .inner{padding: 70px 10px;}
+  .contents_3 .inner .Thanks .title span{top: -30px;right: -25px;}
+  .contents_3 .inner .contect{padding-bottom: 70px;}
+  .contents_3 .inner .contect .contect_in span img{max-width: 20px;}
   .brNone768{display: none;}
 }
 @media screen and (max-width:480px) {
-  .last .inner .Thanks .title {max-width: 180px !important;}
-  .last .inner .contect .contect_in span img{max-width: 20px;}
-  .last .inner .contect .contect_in span.right_q{margin-top: 0px;}
-  .last .inner .contect .contect_in span.left_q{margin-bottom: 0px;}
-  .last .inner .contect .contect_in .contect_textAr{max-width: 250px;}
+  .contents_3 .inner .Thanks .title {max-width: 180px !important;}
+  .contents_3 .inner .contect .contect_in span img{max-width: 20px;}
+  .contents_3 .inner .contect .contect_in span.right_q{margin-top: 0px;}
+  .contents_3 .inner .contect .contect_in span.left_q{margin-bottom: 0px;}
+  .contents_3 .inner .contect .contect_in .contect_textAr{max-width: 250px;}
 }
