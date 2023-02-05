@@ -1,0 +1,135 @@
+/* main */
+#warp{width: 100%; min-width: 1600px;}
+#header,#visual#container#content#footer{width: 100%;}
+.inner{width: 1400px;margin: auto;position: relative; box-sizing: border-box;}
+
+#header{position: relative; background: #fff; height: 182px; z-index: 100;} 
+#header.on{position: fixed; left: 0;top: -80px; z-index: 1000; background: #fff; }
+
+#header .inner{ height: 182px;}
+
+#header h1{position: relative; top: 20px; left: 0;}
+#header .top-menu{position: absolute; display: flex; right: 0; top: 29px;}
+#header .top-menu li{margin-right: 37px; font-size: 16px; font-weight: 600;}
+#header .top-menu li a{color: #000;}
+#header .top-menu li:nth-child(3){border: 1px solid #000; border-radius: 30px; width: 86px; height: 33px; text-align: center; margin-top: -5px;}
+#header .top-menu li:nth-child(3) p{margin-top: 5px;}
+#header .top-menu li:nth-child(4){margin-top: -10px; z-index: 100;}
+#header .top-menu li:nth-child(4) input[type=text]{border: none; border-bottom: 1px solid #000; width: 200px;}
+#header .top-menu li:nth-child(4) button{border: none;background:transparent;cursor: pointer;}
+#header .top-menu li:nth-child(4) button i{font-size: 30px; color: #000;}
+
+#header .nav{position: absolute;right: -55px; bottom: 33px;}
+#header .nav .main-menu{display: flex;}
+#header .nav .main-menu li{margin-right: 89px; }
+#header .nav .main-menu li a{font-size: 18px; font-weight: 600;color: #000;}
+#header .nav .main-menu li:last-child {width: 90px; height: 33px; text-align: center; border: 1px solid #000; border-radius: 50px;}
+#header .nav .main-menu li:last-child p{margin: 2px;}
+
+#visual{width: 100%; height: 944px;}
+#visual .inner{width: 100%; height: 944px;}
+
+#visual .v-text{position: absolute;z-index: 10; left: 20%; top: 240px;}
+#visual .v-text h2{font-size: 40px; font-weight: 600; color: #fff; margin-left: 80px; margin-bottom: 45px;}
+#visual .v-text h2 b{color: #0078AE}
+#visual .v-text strong{font-size: 32px; color: #fff; margin-bottom: 45px; display: block;}
+#visual .v-text p{font-size: 40px; color: #fff;}
+#visual .v-text p b{color: #E51737;}
+
+#visual .main-banner{width: 100%; height: 944px; overflow: hidden; position: relative;}
+#visual .main-banner li{width: 100%; height: 944px; background-repeat: no-repeat; background-size: cover;position: absolute; left: 100%;top: 0; background-position: 50% 50%;} 
+#visual .main-banner li:nth-child(1){background-image: url(../images/domino/visual.jpg); left: 0;}
+#visual .main-banner li:nth-child(2){background-image: url(../images/domino/visual2.jpg);}
+#visual .main-banner li:nth-child(3){background-image: url(../images/domino/visual3.jpg);}
+
+#visual .oderbox{position: absolute; z-index: 30; right: 20%;top: 20%;}
+#visual .oderbox li{width: 267px; height: 177px; border-radius: 30px; text-align: center;margin-bottom: 22px;}
+#visual .oderbox li:nth-child(1){background: #0077ae91;}
+#visual .oderbox li:nth-child(2){background: #e517368a;}
+#visual .oderbox li:nth-child(3){background: #0db1fd91;}
+#visual .oderbox li a {color: #fff;font-weight: 600;font-size: 32px;}
+#visual .oderbox li a p{padding-top: 25px;}
+
+#visual .paging{position: absolute; left: 50%; bottom:63px; z-index: 100
+    ; display: flex;}
+#visual .paging li{width: 39px;  height: 14px;background: #fff
+    ; margin-right: 10px; cursor: pointer; position: relative; translate: 0.3;}
+#visual .paging li.on span{position: absolute; left: 0;top: 0; width: 39px; height: 14px; background: #0078AE;}
+
+/* content 공통 */
+.main .c-box div > h3{font-size: 32px; font-weight: 600; padding-top: 86px; margin-bottom: 28px; color: #000;}  
+.main .c-box div > span{width: 90px; height: 1px; background: #000; display: block; margin-bottom: 28px;}
+.main .c-box div > p{font-size: 22px; color: #3A3A3A;}
+
+/* content1 */
+.main .domino{height: 1212px;background: #D2E6EE;}
+.main .domino .d-box{display: flex; flex-wrap: wrap; width: 1400px;}
+.main .domino .d-box li{width: 350px; height: 401px; position: relative; background: #F8F8F8; right: 0;top: 55px; text-align: center; color: #000;}
+.main .domino .d-box li img{width: 350px; height: 401px}
+.main .domino .d-box li strong{display: block; font-size: 24px; padding-top :59px;}
+.main .domino .d-box li > p{font-size: 16px; margin-top: 60px; line-height: 2; } 
+.main .domino .d-box li > span{border: 0.5px solid rgba(114, 114, 114, 0.281); border-radius: 10px; width: 117px; height: 37px;display: inline-block; text-align: center; position: absolute; left:115px; top: 300px;}
+.main .domino .d-box li span a p{ margin-top: 5px; font-size: 16px; color: #000;}
+
+/* content 2 */
+.main .mania .menu{overflow: hidden; width: 1008px; height: 700px; position: relative; top: 55px;}
+.main  .mania{height: 1077px; background: #F9ECEE;}
+.main .mania .menu{}
+.main .mania .menu .img{}
+.main .mania .menu .img li{width: 1008px; height: 700px; position: absolute; left: 100%; top: 0; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.main .mania .menu .img li:nth-child(1){background-image: url(../images/domino/content2.jpg); left: 0;}
+.main .mania .menu .img li:nth-child(2){background-image: url(../images/domino/content2_1.jpg);}
+.main .mania .menu .img li:nth-child(3){background-image: url(../images/domino/content2_2.jpg);}
+.main .mania .menu .img li:nth-child(4){background-image: url(../images/domino/content2_3.jpg);}
+
+.main .mania .menu .img li p{ position: relative; left: 850px; top: 600px; cursor: pointer;}
+.main .mania .menu .img li p a{font-size: 25px; font-weight: 600; color: #fff}
+.main .mania .menu .img li p:hover a{ color: #E51737;}
+
+
+
+.main .mania div > strong{font-size: 64px; font-weight: 600; display: block; position: absolute; z-index: 100; color: #fff;}
+.main .mania .list{position: absolute; left: 1008px; top: 275px;display: flex; }
+.main .mania .list li{width: 98px; height: 700px; background: #fff; border-right: 0.5px solid rgba(218, 218, 218, 0.5); text-align: center; color: #acacac; cursor: pointer;}
+.main .mania .list li.on {font-weight: 600; color: #000;}
+.main .mania .list li  strong{font-size: 24px; display: block; height: 600px; width: 23px;margin: auto; line-height: 1.4; padding-top: 20px;}
+.main .mania .list li  p{font-size:  20px;}
+
+
+.main .event{ }
+.main .event .inner{width: 100%; height: 587px; }
+
+.main .event .e-text{ width: 100%; height: 587px; position: relative; overflow: hidden;}     
+.main .event .e-text li{position: absolute; left:100%; top:0;height: 587px; width: 100%;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}
+.main .event .e-text li:nth-child(1){background-image: url(../images/domino/gift.jpg); left:0;}
+.main .event .e-text li:nth-child(2){background-image: url(../images/domino/gift2.jpg);}
+
+.main .event .e-text li >div{position: relative; left: 18%; top: 55px;}
+.main .event .e-text li strong{font-size: 25px; color: #0078AE; }
+.main .event .e-text li p{font-size: 34px; color: #000;}
+.main .event .e-text li p b{color: #E51737;}
+.main .event .e-text li h3{font-size: 39px; font-weight: 600;}
+.main .event .e-text li span{width: 376px; height: 58px; background: #fff;text-align: center; font-size: 25px; line-height: 50px; position: absolute; top: 300px; left: 10%;cursor: pointer;}
+.main .event .e-text li span b{color: #E51737;}
+.main .event .e-text li span i{}
+
+#footer{}
+#footer .inner{padding-top: 50px;}
+#footer h3{margin-bottom: 50px;}
+#footer strong{display: block;font-size: 32px; font-weight: 600; position: absolute; top: 50px; left: 250px; line-height: 60px; color: #000;}
+#footer .text-line{display: flex;}
+#footer .text-line li{margin-right:30px; margin-bottom: 40px;}
+#footer .text-line li a{ font-size: 20px;color: #000;}
+
+#footer .ad{color: #000;}
+#footer .ad p{ margin-bottom: 15px; font-size: 16px;}
+#footer .ad p:last-child{ margin-top: 40px; font-size: 14px;}
+
+#footer .app{position: absolute; right:  0px; top: 70px;font-size: 20px; color: #000;}
+#footer .app a{position: relative; right: -200px; top: -30px; margin-right: 20px;}
+#footer .app a i{font-size: 30px; color: #000;}
+
+#footer .sns{position: absolute; right: -60px; top: 250px;}
+#footer .sns a{margin-left: 10px;}
+#footer .sns a i{font-size: 30px; color: #000;}
+/* sub */
